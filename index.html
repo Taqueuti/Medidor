@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medidor de Água Consumida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Medidor de Água Consumida</h1>
+      <div class="medidor">
+        <div class="agua"></div>
+        <span class="quantidade">0 ml</span>
+      </div>
+      <button onclick="adicionarAgua(100)">Beber 100 ml</button>
+      <button onclick="adicionarAgua(250)">Beber 250 ml</button>
+      <button onclick="adicionarAgua(500)">Beber 500 ml</button>
+      <button onclick="zerarMedidor()">Zerar Medidor</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

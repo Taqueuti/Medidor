@@ -1,0 +1,94 @@
+body{
+    background-color: antiquewhite
+}
+.container {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .medidor {
+    width: 130px;
+    height: 300px;
+    border-radius: 28px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border: solid #000000;
+    
+  }
+  
+  .agua {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to bottom, #00d2ff, #3a7bd5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: height 0.5s;
+  }
+  
+  .quantidade {
+    display: block;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .medidor:before {
+    content: "";
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background: linear-gradient(to bottom, #f9f9f9, #fff);
+  }
+  
+  .medidor:after {
+    content: "";
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    background: linear-gradient(to bottom, #f9f9f9, #fff);
+  }
+  
+  button {
+    background: linear-gradient(to bottom, #3a7bd5, #00d2ff);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 0.3s;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background: linear-gradient(to bottom, #2c5282, #0096c7);
+  }
+  
+
+  .alert {
+    border-radius: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  
